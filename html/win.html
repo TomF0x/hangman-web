@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Hangman</title>
+</head>
+<body>
+<div class="Msg">
+    You won the word was {{.Randomword}}<br>
+</div>
+
+<iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+
+<form action="/reset" method="post" target="hiddenFrame" onSubmit="window.setTimeout(function(){location.reload()},500)">
+    <button name="reset" value="true" class="ntm">Plain again</button>
+</form>
+<button class="ntm2" onclick="location.href='http://localhost:8000/scoreboard'" type="button">
+    Scoreboard</button>
+</body>
+</html>

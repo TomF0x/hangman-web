@@ -1,0 +1,69 @@
+body {
+    background-color: #1f1f1f;
+}
+
+.choose {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.hideword {
+    font-size: 150px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: wheat;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 5px;
+}
+
+.Msg {
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: wheat;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Try {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: wheat;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Used {
+    font-size: 40px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: darkred;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.ntm {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 500px;
+    height: 50px;
+}
+
+.ntm2 {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 500px;
+    height: 50px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/scoreboard.css" />
+    <title>Scoreboard</title>
+</head>
+
+<body>
+
+<table style="margin-left: 20px;">
+    <th>
+        <tr style="color: black; ">
+            <td>Username | Difficulty | Time | Score</td>
+        </tr>
+    </th>
+
+    {{ range .Tab }}
+
+    <tr>
+        <td>{{ .Name }} | {{ .Diff }} | {{ .Time }} | {{ .Score }}</td>
+
+        {{ end }}
+
+    </tr>
+
+</table>
+</body>
+</html>

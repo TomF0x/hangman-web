@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+
+<form action="/difficulties" class="choose" method="post" target="hiddenFrame" onSubmit="window.setTimeout(function(){location.reload()},1000)">
+    <label for="diff">Choose a difficulty:</label>
+    <select name="difficultie" id="diff">
+        <option value="easy">EASY</option>
+        <option value="normal">NORMAL</option>
+        <option value="hard">HARD</option>
+    </select>
+    <br>
+    <input type="text" name="username" required placeholder="Username" autofocus>
+    <input type="submit" value="Play !">
+</form>
+
+</body>

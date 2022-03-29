@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Hangman</title>
+    <link rel="stylesheet" href="../css/split.css" />
+</head>
+
+<body>
+<div class="split left">
+    <div class="centered">
+        <div class="hideword">
+            {{.HideWord}}<br>
+        </div>
+
+        <div class="Msg">
+            {{.Msg}}<br>
+        </div>
+
+        <div class="Try">
+            You have {{.Try}} attempts remaining<br>
+        </div>
+
+        <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+
+        <form action="/hangman" id="myForm" method="post" name="myForm" target="hiddenFrame" onSubmit="window.setTimeout(function(){location.reload()},500)">
+            <div class="form-textbox">
+                <input type="text" name="letter" id="letter" class="ntm" required placeholder="Choose a letter">
+            </div>
+            <div class="form-sumbit">
+                <input type="submit" value="Send !" class="ntm2">
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+        <img src="../imgs/{{.Jose}}.jpg">
+    </div>
+</div>
+
+</body>
